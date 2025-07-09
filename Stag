@@ -1,0 +1,7 @@
+class UndoRedoStack:
+    def __init__(self):
+        self.undo_Stack = []
+        self.Redo_Stack = []
+
+    def do_action(self, action):
+        self.undo_Stack.append(action)
