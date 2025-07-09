@@ -5,3 +5,12 @@ class UndoRedoStack:
 
     def do_action(self, action):
         self.undo_Stack.append(action)
+
+
+    def undo(self):
+        abc = self.undo_Stack.pop()
+        self.Redo_Stack.append(abc)
+
+    def redo(self):
+        self.undo_Stack.append(abc)
+        self.Redo_Stack.pop(abc)
