@@ -8,9 +8,18 @@ class UndoRedoStack:
         self.Redo_stack.clear
 
     def undo(self):
-        abc = self.undo_Stack.pop()
-        self.Redo_Stack.append(abc)
+        action = self.undo_Stack.pop()
+        self.Redo_Stack.append(action)
 
     def redo(self):
-        abc = self.Redo_Stack.pop()
-        self.undo_Stack.append(abc)
+        action = self.Redo_Stack.pop()
+        self.undo_Stack.append(action)
+obj = UndoRedoStack()
+obj = ("type apple")
+obj = ("type banana")
+obj = undo()
+obj = redo()
+
+#In this code I make a redo_undo class and and made two stacks under it
+, then i define a variable "action" and I define the undo and redo functions.
+then I just test the code out with a action
