@@ -15,10 +15,10 @@ class UndoRedoStack:
         action = self.Redo_Stack.pop()
         self.undo_Stack.append(action)
 obj = UndoRedoStack()
-obj = ("type apple")
-obj = ("type banana")
-obj = undo()
-obj = redo()
+obj.do_action("type apple")
+obj.do_action("type banana")
+obj.undo()
+obj.redo()
 
 #In this code I make a redo_undo class and and made two stacks under it
 , then i define a variable "action" and I define the undo and redo functions.
